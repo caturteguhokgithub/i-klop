@@ -95,7 +95,7 @@ export default function IntroHeader() {
               }}
             >
               <Link href="/bgv/">
-                <Image
+                {/* <Image
                   alt="BGV"
                   src={`/logo.png`}
                   width={0}
@@ -105,8 +105,8 @@ export default function IntroHeader() {
                     width: "auto",
                     height: "60px",
                   }}
-                />
-                {/* <CompanyLogo dark company="bgv" /> */}
+                /> */}
+                <CompanyLogo dark company="bgv" />
               </Link>
               {/* {!onlyMediumScreen && (
                 <Stack direction="row" alignItems="center" gap={4}>

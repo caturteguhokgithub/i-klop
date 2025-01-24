@@ -8,8 +8,8 @@ import React from "react";
 import { cfPoppins } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Vio BGV STB",
-  description: "Set Top Box",
+  title: "iKLOP",
+  description: "iKLOP",
   // icons: {
   //   icon: [
   //     {
@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cfPoppins.className} >
+      <body className={cfPoppins.className}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={iTheme}>
             <CssBaseline />

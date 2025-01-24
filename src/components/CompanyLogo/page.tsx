@@ -84,17 +84,63 @@ export default function CompanyLogo({
           </Box>
         </Fragment>
       ) : (
-        <Image
-          alt="BGV"
-          src={`/logo.png`}
-          width={0}
-          height={0}
-          sizes="100vw"
-          style={{
-            width: "auto",
-            height: "60px",
-          }}
-        />
+        <Fragment>
+          <Box
+            component="span"
+            color={company == "vio" ? red[100] : blue[100]}
+            // className={cfMonoton.className}
+            position="relative"
+            top={2}
+            sx={{ textTransform: "lowercase", fontWeight: 700, pr: 1 }}
+          >
+            i
+          </Box>
+          {/* <Box
+            component="span"
+            color={company == "vio" ? red[100] : blue[100]}
+            className={cfMonoton.className}
+            position="relative"
+            top={2}
+          >
+            -
+          </Box> */}
+          <Box
+            component="span"
+            color={company == "vio" ? red[300] : blue[300]}
+            className={cfMonoton.className}
+            position="relative"
+            top={2}
+          >
+            k
+          </Box>
+          <Box
+            component="span"
+            color={company == "vio" ? red[600] : blue[600]}
+            className={cfMonoton.className}
+            position="relative"
+            top={2}
+          >
+            l
+          </Box>
+          <Box
+            component="span"
+            color={company == "vio" ? red[600] : blue[600]}
+            className={cfMonoton.className}
+            position="relative"
+            top={2}
+          >
+            o
+          </Box>
+          <Box
+            component="span"
+            color={company == "vio" ? red[600] : blue[600]}
+            className={cfMonoton.className}
+            position="relative"
+            top={2}
+          >
+            p
+          </Box>
+        </Fragment>
       )}
     </Typography>
   );
