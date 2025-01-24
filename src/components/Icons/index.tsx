@@ -1,1 +1,0 @@
-export { IconEmptyState } from "./empty";
