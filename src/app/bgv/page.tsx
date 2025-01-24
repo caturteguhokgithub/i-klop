@@ -2,6 +2,6 @@
 
 import Intro from "./intro/page";
 
-export default function Index() {
+export default function IndexIntro() {
   return <Intro />;
 }
