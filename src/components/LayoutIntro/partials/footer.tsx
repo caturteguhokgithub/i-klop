@@ -8,8 +8,7 @@ export default function IntroFooter() {
     <Stack gap={1} textAlign="center" px={3} py={2}>
       <CompanyLogo dark company="bgv" size="sm" />
       <Typography fontSize="12px" color={grey[600]}>
-        Copyright {new Date().getFullYear()} &copy; Vio BGV Set Top Box. All
-        Rights Reserved
+        Copyright {new Date().getFullYear()} &copy; iKLOP. All Rights Reserved
       </Typography>
     </Stack>
   );
