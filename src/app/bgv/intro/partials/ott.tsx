@@ -6,42 +6,60 @@ import useBreakpoints from "@/themes/breakpoints";
 import { SectionTitle } from "@/components/SectionTitle";
 import VideoPlayer from "./videoPlayer";
 import Image from "next/image";
+import Link from "next/link";
 
 export interface DataType {
   image?: string | any;
   bgColor?: string;
   title?: string | any;
+  imgWidth?: string;
+  href?: string;
 }
 
 export const data: DataType[] = [
   {
     image: "youtube",
     title: "youtube",
+    href: "https://www.youtube.com/",
   },
   {
-    image: "vidio",
-    title: "vidio",
+    image: "kino",
+    title: "Kino TV",
+    imgWidth: "50%",
+    href: "https://spiintl.com/channels/kinotv",
   },
+  // {
+  //   image: "vidio",
+  //   title: "vidio",
+  // },
   {
     image: "viu",
     title: "viu",
+    href: "https://www.viu.com/ott/id",
   },
   {
     image: "wetv",
     title: "We TV",
+    href: "https://wetv.vip/id",
   },
   {
-    image: "netflix",
-    title: "netflix",
+    image: "cubmu",
+    title: "Cubmu",
+    imgWidth: "30%",
+    href: "https://www.cubmu.com/",
   },
-  {
-    image: "prime",
-    title: "prime",
-  },
-  {
-    image: "mtv",
-    title: "mtv",
-  },
+  // {
+  //   image: "netflix",
+  //   title: "netflix",
+  // },
+  // {
+  //   image: "prime",
+  //   title: "prime",
+  // },
+  // {
+  //   image: "mtv",
+  //   title: "mtv",
+  // },
 ];
 
 export const CardItem = ({
@@ -50,24 +68,32 @@ export const CardItem = ({
   onClick,
   isActive,
   title,
+  imgWidth,
+  href,
 }: {
   image: string;
   bgcolor?: string;
-  onClick: () => void;
+  onClick?: () => void;
   isActive: boolean;
   title?: string;
+  imgWidth?: string;
+  href?: string;
 }) => {
   return (
-    <Stack
+    <Box
+      component="a"
       justifyContent="center"
       alignItems="center"
       width="100%"
       height="16vh"
       bgcolor={bgcolor || "white"}
       className={isActive ? "active" : ""}
-      onClick={onClick}
+      // onClick={onClick}
       borderRadius={3}
+      href={href}
+      target="_blank"
       sx={{
+        display: "flex",
         transform: isActive ? "scale(1.2)" : "none",
         // backgroundImage: `url(/images/ott/${image}.jpeg)`,
         // backgroundSize: "cover",
@@ -81,14 +107,17 @@ export const CardItem = ({
         height={0}
         sizes="100vw"
         style={{
-          width: "70%",
+          width: imgWidth ? imgWidth : "70%",
           height: "auto",
         }}
       />
-      <Typography sx={{ opacity: 0, userSelect: "none", height: 0 }}>
+      <Typography
+        component="span"
+        sx={{ opacity: 0, userSelect: "none", height: 0 }}
+      >
         {title}
       </Typography>
-    </Stack>
+    </Box>
   );
 };
 
@@ -127,6 +156,8 @@ export default function SectionOtt() {
               }}
             >
               <CardItem
+                href={item.href}
+                imgWidth={item.imgWidth}
                 image={item.image}
                 bgcolor={item.bgColor}
                 isActive={activeIndex === index}

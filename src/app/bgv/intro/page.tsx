@@ -20,7 +20,7 @@ export default function Intro() {
       {/* <IntroBgTitle /> */}
       <Stack gap={6} mt={onlySmallScreen ? "4vh" : "4vh"}>
         <SectionBaner />
-        <SectionTvChannel />
+        {/* <SectionTvChannel /> */}
         <SectionOtt />
         <SectionGames />
         <SectionOttVideo />

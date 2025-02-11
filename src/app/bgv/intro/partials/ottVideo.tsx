@@ -141,7 +141,7 @@ export default function SectionOttVideo() {
   return (
     <Fragment>
       <Stack gap={2}>
-        <SectionTitle label="Video Channels" />
+        <SectionTitle label="New Release" />
         <Box ref={favoriteRef} className="keen-slider">
           {data.map((item, index) => (
             <Box
