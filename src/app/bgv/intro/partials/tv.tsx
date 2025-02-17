@@ -11,9 +11,33 @@ export interface DataType {
   image?: string | any;
   bgColor?: string;
   title?: string | any;
+  href?: string;
+  imgWidth?: string;
 }
 
 export const data: DataType[] = [
+  // {
+  //   image: "viu",
+  //   title: "viu",
+  //   href: "https://www.viu.com/ott/id",
+  // },
+  // {
+  //   image: "cubmu",
+  //   title: "Cubmu",
+  //   imgWidth: "30%",
+  //   href: "https://www.cubmu.com/",
+  // },
+  // {
+  //   image: "kino",
+  //   title: "Kino TV",
+  //   imgWidth: "50%",
+  //   href: "https://spiintl.com/channels/kinotv",
+  // },
+  // {
+  //   image: "wetv",
+  //   title: "We TV",
+  //   href: "https://wetv.vip/id",
+  // },
   {
     image: "transtv",
     title: "Trans TV",
@@ -94,13 +118,14 @@ export const CardItem = ({
       <Image
         alt="BGV"
         src={`/images/tv/${image}.png`}
+        // src={`/images/ott/${image}.png`}
         width={0}
         height={0}
         sizes="100vw"
         style={{
           width: "70%",
           height: "auto",
-          borderRadius: "50%",
+          // borderRadius: "50%",
         }}
       />
       <Typography sx={{ opacity: 0, userSelect: "none", height: 0 }}>

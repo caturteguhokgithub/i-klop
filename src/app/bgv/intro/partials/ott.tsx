@@ -18,29 +18,9 @@ export interface DataType {
 
 export const data: DataType[] = [
   {
-    image: "youtube",
-    title: "youtube",
-    href: "https://www.youtube.com/",
-  },
-  {
-    image: "kino",
-    title: "Kino TV",
-    imgWidth: "50%",
-    href: "https://spiintl.com/channels/kinotv",
-  },
-  // {
-  //   image: "vidio",
-  //   title: "vidio",
-  // },
-  {
     image: "viu",
     title: "viu",
     href: "https://www.viu.com/ott/id",
-  },
-  {
-    image: "wetv",
-    title: "We TV",
-    href: "https://wetv.vip/id",
   },
   {
     image: "cubmu",
@@ -48,6 +28,50 @@ export const data: DataType[] = [
     imgWidth: "30%",
     href: "https://www.cubmu.com/",
   },
+  {
+    image: "kino",
+    title: "Kino TV",
+    imgWidth: "50%",
+    href: "https://spiintl.com/channels/kinotv",
+  },
+  {
+    image: "wetv",
+    title: "We TV",
+    href: "https://wetv.vip/id",
+  },
+
+  // {
+  //   image: "youtube",
+  //   title: "youtube",
+  //   href: "https://www.youtube.com/",
+  // },
+  // {
+  //   image: "cubmu",
+  //   title: "Cubmu",
+  //   imgWidth: "30%",
+  //   href: "https://www.cubmu.com/",
+  // },
+  // {
+  //   image: "viu",
+  //   title: "viu",
+  //   href: "https://www.viu.com/ott/id",
+  // },
+  // {
+  //   image: "wetv",
+  //   title: "We TV",
+  //   href: "https://wetv.vip/id",
+  // },
+  // {
+  //   image: "kino",
+  //   title: "Kino TV",
+  //   imgWidth: "50%",
+  //   href: "https://spiintl.com/channels/kinotv",
+  // },
+
+  // {
+  //   image: "vidio",
+  //   title: "vidio",
+  // },
   // {
   //   image: "netflix",
   //   title: "netflix",
