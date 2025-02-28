@@ -103,13 +103,15 @@ export const CardItem = ({
   imgWidth?: string;
   href?: string;
 }) => {
+  const { onlyMediumScreen } = useBreakpoints();
+
   return (
     <Box
       component="a"
       justifyContent="center"
       alignItems="center"
       width="100%"
-      height="16vh"
+      height={onlyMediumScreen ? "12vh" : "16vh"}
       bgcolor={bgcolor || "white"}
       className={isActive ? "active" : ""}
       // onClick={onClick}
@@ -159,26 +161,26 @@ export default function SectionOtt() {
       perView: "auto",
       spacing: 16,
     },
-    // breakpoints: {
-    //   "(max-width: 1519.98px)": {
-    //     slides: { perView: 9, spacing: 16 },
-    //   },
-    //   "(max-width: 1399.98px)": {
-    //     slides: { perView: 8, spacing: 16 },
-    //   },
-    //   "(max-width: 1199.98px)": {
-    //     slides: { perView: 6, spacing: 16 },
-    //   },
-    //   "(max-width: 991.98px)": {
-    //     slides: { perView: 5, spacing: 16 },
-    //   },
-    //   "(max-width: 767.98px)": {
-    //     slides: { perView: 4, spacing: 16 },
-    //   },
-    //   "(max-width: 575.98px)": {
-    //     slides: { perView: 3, spacing: 16 },
-    //   },
-    // },
+    breakpoints: {
+      "(max-width: 1519.98px)": {
+        slides: { perView: 9, spacing: 16 },
+      },
+      "(max-width: 1399.98px)": {
+        slides: { perView: 8, spacing: 16 },
+      },
+      "(max-width: 1199.98px)": {
+        slides: { perView: 6, spacing: 16 },
+      },
+      "(max-width: 991.98px)": {
+        slides: { perView: 5, spacing: 16 },
+      },
+      "(max-width: 767.98px)": {
+        slides: { perView: 4, spacing: 16 },
+      },
+      "(max-width: 575.98px)": {
+        slides: { perView: 3, spacing: 16 },
+      },
+    },
   });
 
   const handleBoxClick = (index: number) => {

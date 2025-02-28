@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 import { blue, red } from "@mui/material/colors";
 import { cfMonoton } from "@/lib/constants";
 import Image from "next/image";
+import useBreakpoints from "@/themes/breakpoints";
 
 export default function CompanyLogo({
   dark,
@@ -13,6 +14,8 @@ export default function CompanyLogo({
   size?: string;
   company?: string;
 }) {
+  const { onlyMediumScreen } = useBreakpoints();
+
   return (
     <Typography
       fontSize={size == "xs" ? "1.5rem" : size == "sm" ? "2rem" : "3rem"}
@@ -137,7 +140,7 @@ export default function CompanyLogo({
             height={0}
             sizes="100vw"
             style={{
-              width: "100px",
+              width: onlyMediumScreen ? "60px" : "100px",
               height: "auto",
             }}
           />
