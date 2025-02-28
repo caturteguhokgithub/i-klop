@@ -132,6 +132,20 @@ export default function SectionOttVideo() {
       perView: "auto",
       spacing: 16,
     },
+    breakpoints: {
+      "(max-width: 1199.98px)": {
+        slides: { perView: 5, spacing: 16 },
+      },
+      "(max-width: 991.98px)": {
+        slides: { perView: 4, spacing: 16 },
+      },
+      "(max-width: 767.98px)": {
+        slides: { perView: 3, spacing: 16 },
+      },
+      "(max-width: 575.98px)": {
+        slides: { perView: 2, spacing: 16 },
+      },
+    },
   });
 
   const handleBoxClick = (index: number) => {

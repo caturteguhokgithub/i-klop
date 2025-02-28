@@ -10,20 +10,20 @@ import { cfPoppins } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "iKLOP",
   description: "iKLOP",
-  // icons: {
-  //   icon: [
-  //     {
-  //       media: "(prefers-color-scheme: light)",
-  //       url: "https://res.cloudinary.com/caturteguh/image/upload/v1708049745/mrpn/logo-2024_ne4yaj.png",
-  //       href: "https://res.cloudinary.com/caturteguh/image/upload/v1708049745/mrpn/logo-2024_ne4yaj.png",
-  //     },
-  //     {
-  //       media: "(prefers-color-scheme: dark)",
-  //       url: "https://res.cloudinary.com/caturteguh/image/upload/v1708049745/mrpn/logo-2024_ne4yaj.png",
-  //       href: "https://res.cloudinary.com/caturteguh/image/upload/v1708049745/mrpn/logo-2024_ne4yaj.png",
-  //     },
-  //   ],
-  // },
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "https://res.cloudinary.com/caturteguh/image/upload/v1740639604/iklop/favicon_l5fobw.png",
+        href: "https://res.cloudinary.com/caturteguh/image/upload/v1740639604/iklop/favicon_l5fobw.png",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "https://res.cloudinary.com/caturteguh/image/upload/v1740639604/iklop/favicon_l5fobw.png",
+        href: "https://res.cloudinary.com/caturteguh/image/upload/v1740639604/iklop/favicon_l5fobw.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

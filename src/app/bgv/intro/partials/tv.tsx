@@ -113,6 +113,12 @@ export const CardItem = ({
       borderRadius="50%"
       sx={{
         transform: isActive ? "scale(1.2)" : "none",
+        position: "relative",
+        "&:after": {
+          content: "''",
+          display: "block",
+          pb: "100%",
+        },
       }}
     >
       <Image
@@ -125,6 +131,9 @@ export const CardItem = ({
         style={{
           width: "70%",
           height: "auto",
+          position: "absolute",
+          objectFit: "cover",
+          objectPosition: "center",
           // borderRadius: "50%",
         }}
       />
@@ -160,6 +169,26 @@ export default function SectionTvChannel() {
       perView: "auto",
       spacing: 16,
     },
+    breakpoints: {
+      "(max-width: 1519.98px)": {
+        slides: { perView: 9, spacing: 2 },
+      },
+      "(max-width: 1399.98px)": {
+        slides: { perView: 8, spacing: 2 },
+      },
+      "(max-width: 1199.98px)": {
+        slides: { perView: 6, spacing: 2 },
+      },
+      "(max-width: 991.98px)": {
+        slides: { perView: 5, spacing: 2 },
+      },
+      "(max-width: 767.98px)": {
+        slides: { perView: 4, spacing: 2 },
+      },
+      "(max-width: 575.98px)": {
+        slides: { perView: 3, spacing: 2 },
+      },
+    },
   });
 
   return (
@@ -178,7 +207,7 @@ export default function SectionTvChannel() {
               sx={{
                 transform: activeIndex === index ? "scale(1.2)" : "none",
                 cursor: "pointer",
-                width: "126px !important",
+                // width: "126px !important",
               }}
             >
               <CardItem

@@ -85,25 +85,15 @@ export default function CompanyLogo({
         </Fragment>
       ) : (
         <Fragment>
-          <Box
+          {/* <Box
             component="span"
             color={company == "vio" ? red[100] : blue[100]}
-            // className={cfMonoton.className}
             position="relative"
             top={2}
             sx={{ textTransform: "lowercase", fontWeight: 700, pr: 1 }}
           >
             i
           </Box>
-          {/* <Box
-            component="span"
-            color={company == "vio" ? red[100] : blue[100]}
-            className={cfMonoton.className}
-            position="relative"
-            top={2}
-          >
-            -
-          </Box> */}
           <Box
             component="span"
             color={company == "vio" ? red[300] : blue[300]}
@@ -139,7 +129,18 @@ export default function CompanyLogo({
             top={2}
           >
             p
-          </Box>
+          </Box> */}
+          <Image
+            alt="iKlop"
+            src="https://res.cloudinary.com/caturteguh/image/upload/v1740639166/iklop/logo-iklop-new_blrzkn.png"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{
+              width: "100px",
+              height: "auto",
+            }}
+          />
         </Fragment>
       )}
     </Typography>

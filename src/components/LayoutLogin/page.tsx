@@ -132,7 +132,8 @@ export default function LayoutLogin({
           )}
           <Stack pb={3}>
             <Typography fontSize="12px" color={grey[500]} align="center">
-              Copyright {new Date().getFullYear()} &copy; Vio BGV Set Top Box
+              Copyright {new Date().getFullYear()} &copy; iKLOP. All Rights
+              Reserved
             </Typography>
           </Stack>
         </Stack>
